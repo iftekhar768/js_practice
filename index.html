@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>javascript</title>
 </head>
 <body>
-    
+    <form action="" id="myForm" onsubmit="return validationForm()">
+        <label for="userName">UserName: </label>
+        <input type="text"  id="userName"><br>
+        <span id="nameErr"></span><br>
+        <label for="id1">ID: </label>
+        <input type="text" id="id1"><br>
+        <span id="id1Err"></span><br>
+        <label for="cgpa">CGPA: </label>
+        <input type="text" id="cgpa">
+        <span id="cgpaErr"></span><br>
+        <br>
+        <label for="ccredit">Completed Credit: </label>
+        <input type="number" id="ccredit"><br>
+        <span id="ccreditErr"></span><br>
+        <label for="dept">Department: </label>
+        <select  id="dept">
+            <option id="default" value="">Choose dept</option>
+            <option id="fst1" value="FST">FST</option>
+            <option id="fee1" value="FEE">FEE</option>
+            <option id="fba1" value="FBA">FBA</option>
+        </select> <br>
+        <span id="deptErr"></span><br>
+        <label for="skill">Skill: </label>
+        <input type="checkbox"  id="excelCB" value="excel">Excel
+        <input type="checkbox"  id="webdevCB" value="webdev">Web Development
+        <input type="checkbox" id="djangoCB" value="django">django
+        <input type="checkbox" id="mlCB" value="ml">Machine Learning
+
+        <span id="skillErr"></span><br>
+        <label for="gender">Gender: </label>
+        <input type="radio" id="maleRB" name="gender" value="male">Male
+        <input type="radio" id="femaleRB" name="gender" value="female">Female<br>
+        <span id="genderErr"></span><br>
+
+        <input type="submit" value="submit"> 
+        <input type="reset" id="btn" onclick="myFunction()" value="Reset form">
+    </form>
 </body>
 </html>
