@@ -5,45 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>javascript</title>
+    <title>Tour of DOM</title>
 </head>
 <body>
-    <form action="" id="myForm" onsubmit="return validationForm()">
-        <label for="userName">UserName: </label>
-        <input type="text"  id="userName"><br>
-        <span id="nameErr"></span><br>
-        <label for="id1">ID: </label>
-        <input type="text" id="id1"><br>
-        <span id="id1Err"></span><br>
-        <label for="cgpa">CGPA: </label>
-        <input type="text" id="cgpa">
-        <span id="cgpaErr"></span><br>
-        <br>
-        <label for="ccredit">Completed Credit: </label>
-        <input type="number" id="ccredit"><br>
-        <span id="ccreditErr"></span><br>
-        <label for="dept">Department: </label>
-        <select  id="dept">
-            <option id="default" value="">Choose dept</option>
-            <option id="fst1" value="FST">FST</option>
-            <option id="fee1" value="FEE">FEE</option>
-            <option id="fba1" value="FBA">FBA</option>
-        </select> <br>
-        <span id="deptErr"></span><br>
-        <label for="skill">Skill: </label>
-        <input type="checkbox"  id="excelCB" value="excel">Excel
-        <input type="checkbox"  id="webdevCB" value="webdev">Web Development
-        <input type="checkbox" id="djangoCB" value="django">django
-        <input type="checkbox" id="mlCB" value="ml">Machine Learning
-
-        <span id="skillErr"></span><br>
-        <label for="gender">Gender: </label>
-        <input type="radio" id="maleRB" name="gender" value="male">Male
-        <input type="radio" id="femaleRB" name="gender" value="female">Female<br>
-        <span id="genderErr"></span><br>
-
-        <input type="submit" value="submit"> 
-        <input type="reset" id="btn" onclick="myFunction()" value="Reset form">
-    </form>
+    <header>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem dolorum veritatis voluptas nulla quidem magnam facere praesentium nesciunt! Amet reprehenderit impedit nemo consectetur itaque sint ullam et facilis eaque aspernatur.</p>
+        <h1>Welcome to my DOM</h1>
+    </header>
+    <main>
+        <section>
+            <h1>My Awesome DOM</h1>
+            <ul>
+                <li>JAVA</li>
+                <li>Python</li>
+                <li>C++</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>Bro</li>
+                <li>Big</li>
+                <li>Cat</li>
+                <li>Dog</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem ratione perspiciatis explicabo beatae officia accusantium ut eos consectetur minus facilis consequuntur, ducimus quisquam, asperiores sapiente consequatur deleniti dolorum provident.</p>
+        </section>
+        <section>
+            <h1 id="he1">Places To visit</h1>
+            <ul>
+                <li class="place">Rangamati</li>
+                <li class="place">Bandarban</li>
+                <li class="place">Chittagong</li>
+            </ul>
+        </section>
+    </main>
+    <footer>Footer</footer>
 </body>
 </html>
